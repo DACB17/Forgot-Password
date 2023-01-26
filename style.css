@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	font-size: 16px;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(84, 82, 82, 0.8);
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.dialog {
+	width: 580px;
+	height: 260px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	background-color: rgb(0, 143, 48);
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	border-radius: 15px 15px 0 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.icon {
+	font-weight: bold;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(0, 143, 48);
+}
+
+.title {
+	margin-left: 15px;
+	font-size: 1.50rem;
+}
+
+.body {
+	padding: 15px;
+	line-height: 1.2;
+	color: rgb(15, 15, 15);
+}
+
+.button-wrapper {
+	align-self: flex-end;
+	padding: 0 15px 15px;
+}
+
+.success {
+	width: 70px;
+	height: 30px;
+	border-radius: 25px;
+	border: 0;
+	background-color: rgb(0, 143, 48);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.success:hover {
+	background-color: rgb(31, 196, 86);
+}
+
+.cancel {
+	background-color: transparent;
+	margin-right: 15px;
+	color: rgb(31, 196, 86);
+	font-weight: bold;
+	width: 70px;
+	height: 30px;
+	border-radius: 25px;
+	border: 1px solid rgb(31, 196, 86);
+	cursor: pointer;
+}
+
+.cancel:hover {
+	background-color: rgb(0, 143, 48);
+	border: 1px solid rgb(0, 143, 48);
+	color: white;
+}
+
+.close {
+	font-weight: normal;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.close:hover {
+	background-color: red;
+}
+
+.display {
+	display: flex;
+}
+
+.button-open {
+	padding: 15px 15px;
+	border-radius: 25px;
+	border: none;
+	background-color: rgb(0, 143, 48);
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+input[type=email] {
+	width: 50%;
+	padding: 10px 20px;
+	margin: 35px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.modal_text {
+	padding: 0 2rem;
+	font-size: 1.2rem;
+	line-height: 1;
+	margin-left: 20px;
+}
+
+.desc {
+	font-size: 15px;
+	margin: 10px 10px;
+	text-align: center;
+}
